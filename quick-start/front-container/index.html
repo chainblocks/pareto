@@ -1540,20 +1540,15 @@ multidimensional optimization problem due to the curse of dimensionality. With s
 only <span class="arithmatex">\(O(m \log n)\)</span>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Indicators</p>
+<p>Because Pareto fronts include solutions that are incomparable by definition, we need metrics to tell us the quality of a front. The <code>front</code> objects implement lots of performance indicators that can give us measures of:</p>
+<ul>
+<li>hypervolume</li>
+<li>convergence</li>
+<li>cardinality</li>
+<li>distribution</li>
+<li>correlation</li>
+</ul>
 </div>
-<p>Because Pareto fronts include solutions that are incomparable by definition, we need metrics to tell us the quality of a
-front. The <code>front</code> objects implement lots of performance indicators that can give us measures of:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>* hypervolume
-* convergence
-* cardinality
-* distribution
-* correlation
-</code></pre></div>
-</td></tr></table>
 <!-- Generated with mdsplit: https://github.com/alandefreitas/mdsplit -->
                 
                   
