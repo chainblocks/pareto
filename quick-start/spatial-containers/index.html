@@ -222,9 +222,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
@@ -327,9 +325,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
@@ -501,9 +497,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
@@ -782,9 +776,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
@@ -982,9 +974,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
@@ -1230,9 +1220,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
@@ -1378,9 +1366,7 @@
 
 
   
-    
-  
-  <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
@@ -1530,11 +1516,17 @@
 <p class="admonition-title">Runtime dimensions</p>
 <p>Some problems are so dynamic that even the number of dimensions changes at runtime. In these applications, you can set the number of compile-time dimensions to <code>0</code>, and the containers will accept keys with any number of dimensions. This, of course, comes at a cost of an extra dynamic memory allocation per element.</p>
 </div>
-<p>The usual <code>find(k)</code>, <code>lower_bound(k)</code>, and <code>upper_bound(k)</code> functions of unidimensional maps are not enough for spatial containers. We fix this with <strong>query iterators</strong>, that explore the spatial data according to a list of predicates. Queries can limit or expand their search region with a conjunction of predicates such as intersections, disjunctions, and nearest points.</p>
+<p>The usual <code>find(k)</code>, <code>lower_bound(k)</code>, and <code>upper_bound(k)</code> functions of unidimensional maps are not enough for spatial
+containers. We fix this with <strong>query iterators</strong>, that explore the spatial data according to a list of predicates.
+Queries can limit or expand their search region with a conjunction of predicates such as intersections, disjunctions,
+and nearest points.</p>
 <div class="admonition tip">
 <p class="admonition-title">Predicate Lists</p>
-<p>To make queries more efficient, the <code>pareto::predicate_list</code> object compresses redundant predicates and sort these predicates by how restrictive they are. All tree nodes store their minimum bounding rectangles, and these underlying data structures are then explored to avoid nodes that might not pass the predicate list. This allows us to find each query element in <span class="arithmatex">\(O(m \log n)\)</span> time, regardless of how complex the query is.</p>
 </div>
+<p>To make queries more efficient, the <code>pareto::predicate_list</code> object compresses redundant predicates and sorts these
+predicates by how restrictive they are. All tree nodes store their minimum bounding rectangles, and these underlying
+data structures are then explored to avoid nodes that might not pass the predicate list. This allows us to find each
+query element in <span class="arithmatex">\(O(m \log n)\)</span> time, regardless of how complex the query is.</p>
 <!-- Generated with mdsplit: https://github.com/alandefreitas/mdsplit -->
                 
                   
@@ -1614,7 +1606,7 @@
       <script>
         app = initialize({
           base: "../..",
-          features: ['navigation.sections', 'toc.integrate', 'header.autohide'],
+          features: ['toc.integrate', 'header.autohide'],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
